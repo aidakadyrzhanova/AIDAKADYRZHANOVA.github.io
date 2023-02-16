@@ -83,3 +83,43 @@ article[id] h2 {
 .categories, .quick_links {
    text-align: center;
 }
+
+@media (max-width: 767px) {
+
+nav ul li {
+  padding: 0% 10%;
+
+
+}
+
+.banner {
+  font-size: 16pt;
+}
+
+#superhero {
+  max-width: 100%;
+      width: 100%;
+      height: auto;
+}
+
+#me {
+    max-width: 100%;
+      width: 100%;
+      height: auto;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+#superhero, #me {
+      max-width: 100%;
+      width: 70%;
+      height: auto;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+
+}
