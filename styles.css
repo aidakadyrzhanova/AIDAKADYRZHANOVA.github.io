@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #B0B7C0;
+	color: #557A95;
+	font-family: 'Braah One', sans-serif;
+	font-size: 1.05em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+header {
+	z-index: 9999;
+	position: fixed;
+	top:0;
+	width: 100%;
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	padding: 30px 10%; 
+}
+
+header, .logo, .menu, .menu li, .menu li a {
+	background-color: #5D5C61;
+	color: #C0C0C0;
+}
+
+.logo {
+	margin-right: auto;
+}
+
+.menu {
+	margin-left: auto;
+}
+
+.menu li {
+	display: inline-block;
+	padding: 0px 5px;
+}
+
+.menu li a {
+	transition: 0.5s;
+}
+
+.menu li a:hover {
+	color: #808080;
+}
+
+.menu li a:active {
+	color: #000000;
+}
+
+.main_content {
+  display: flex; 
+  aling-items: center;
+  margin-top: 10%;
+}
+
+.image {
+	width: 100%;
+	margin-left: 10%;
+	margin-right: 5%;
+}
+
+#photo {
+	width: 80%;
+	height: auto;
+}
+
+
+.txt-box {
+	margin-right: 5%;
+	margin-left: 0%;
+	margin-top: 0%;
+	width: 100%;
+	align-self: center;
+	line-height: 1.8;
+}
+
+.slp {
+	display: flex;
+}
+
+.slp1, .slp2 {
+	margin-right: 12%;
+}
+
+.slp2 {
+	width: 160%;
+}
+
+#linkedin, #github, #instagram {
+	width: 100px;
+	height:auto;
+	margin-right: 10%;
+	transition: width 0.5s;
+}
+
+.socials {
+	display: inline;
+}
+
+#github:hover, #linkedin:hover, #instagram:hover {
+	width: 150px;
+}
+
+.hamburger {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	cursor: pointer;
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: #DBDDD0;
+	margin: 6px 0px;
+	transition: 0.4s;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 1000vh;
+	display: block;
+	z-index: 98;
+	background-color: #5D5C61;
+	padding-top: 120px;
+	transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+	left: 0;
+}
+
+.mobile-nav a {
+		display: block;
+		width: 100%;
+		max-width: 200px;
+		margin: 0 auto 16px;
+		text-align: center;
+		padding: 12px 16px;
+		background-color: # ;
+		border-radius: 10px;
+		text-decoration: none;
+		transition: 0.5s;
+	}
+
+.mobile-nav a:hover {
+	background-color: #8896A8;
+}
+
+@media (min-width: 768px) {
+	.mobile-nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	nav, .button_contacts {
+		display: none;
+	}
+
+	.main_content {
+		display: grid;
+		margin-top: 5%;
+	}
+
+	.image {
+		width: 90%;
+		margin-right: 20%;
+		margin-top: 10%;
+		position: relative;
+	}
+
+	.txt-box {
+		margin-left: 10%;
+		margin-right: px;
+		margin-top: 10%;
+		padding-right: 20%;
+	}
+
+	#photo {
+		margin-top: 20%;
+		margin-right: 20%;
+	}
+
+	* {
+		font-size: 1.0.3em;
+	}
+
+	.slp {
+		display: contents;
+	}
+}
